@@ -1,0 +1,22 @@
+This workshop was very useful for refreshing my memory with class privacy, class level scopes, 
+and understanding how important it can be to make certain member functions and attributes within your program
+private and unexposed from the outside world. Although it was very time consuming initially, It fortunately allowed me to 
+tune up my formatting skills in both the Lab portion and especially the DIY portion which is where I ran into most of my errors.
+
+For example, I had an interesting bug this workshop for the DIY portion where I used the same comparative statement
+as per the lab portion where if the total amount of food added was equal to the total amount of food initialized, display
+x amount of food. However, because the test samples were different it would break my display function. After doing some unit
+testing I Figured out that by adding a variable that increments in all cases of rows added, and one exclusively 
+when food is actually added, by comparing the one within the conditional statement to the total I was able to fix it.
+
+I also had a minor issue when using strncpy() that I made in the lab portion, where I forgot to set the last position of the statically 
+allocated array to a null terminator, which caused a really messing printing error, however after using breakpoints it was very easy to find.
+
+It was also really nice to call the queries and modifiers interchangeably to reduce repetitive code,
+for example in the display() function in both Bill and CalorieList we called the queries Title(), Footer() and Food::Display() 
+to print the final form of the calorie list. We as well used the modifier, set(3arg) to set the next position in the dynamically allocated
+array of objects in Food we initialized using the init() function. 
+
+Other than that, everything else went relatively smooth and the concepts we learned prior to actually implementing this workshop were very
+clear. 
+

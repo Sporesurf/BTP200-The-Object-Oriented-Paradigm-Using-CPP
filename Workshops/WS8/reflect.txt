@@ -1,0 +1,20 @@
+After succesful completion of workshop 8, I feel like I have a much deeper understanding of 
+in heritance and polymorphism. Early on in the instructions when we were asked to create getSpecs
+It didn't mention that it had to be a virtual function, I unfortunately overlooked that and had to spend
+a little bit of time thinking why I was getting the wrong shape printed. This made me read a lot more into
+virtual and pure virtual functions and understanding there purpose. After adjusting that error, everything
+went relatively smoothly. I feel like Im a lot more comfortable with calling base class constructors and 
+ostr and istr types. This workshop has effectively shown the purpose of privacy within modular programming.
+
+For ms3 on the other hand. While copying a string after deallocating some memory, 
+I made a syntax error in the form of strlen(str.c_str() + 1), where I wasn't adding
+the interger value of one to string length, this resulted in creating a memory leak
+where I was copying one more value than the memory I had allocated memory for. This pushed the
+break points to point towards the csvRead() line where I Was deallocating memory. This took 
+me a few days to find because I was fixing the problem in the wrong sectionss of code. 
+I definitely learned to be more careful when writing syntax, on top of the inheritance and 
+polymorphism we have been learning between the Patient, ticket, time and IOable classes. 
+With the current subject matter we're learning, it definitely feels like the amount of 
+syntax required to perform operations has reduced significantly.
+Overall both very useful projects.
+

@@ -1,0 +1,23 @@
+This workshop was really good for helping me gain a better understanding of the differences between unary, binary
+and ternary operators. Although conceptually they're simply a definition of the number of operands within an operator
+overload, my idea and understanding of what is and is not an operand was different. Similarly, I also had a slightly difficult
+time understanding why we would want to overload input and output operators. Implementation was not enough to grasp an understanding of these terms
+so, I was forced to go over notes, forums and class lectures extensively to help me grasp a better understanding. Looking back at it, I feel like
+I had overcomplicated these terms, and now I think that not only are they quite simple, but they are also extremely useful
+and prove the computational power of c++. 
+
+Another portion that was very helpful for my understanding was in both part 1, and part 2 where we had to design
+free helper operators. I was trying to implement them within the class definition only to realize what I was 
+doing was wrong. Upon doing so I learned that helper functions are global classes, and we have the opportunity to 
+make these free helper functions "friends" to give them access private members within a class, however, this pierces encapsulation laws
+and should only be done when really needed. 
+
+I also initially created an isValid() member function in order to 
+check if m_mark was valid, however I realized that by creating a bool operator
+to do the same thing, I could simply reduce the syntax by calling a reference to the current function instead.
+
+For part 2 I enjoyed casting Mark into different return types, where by creating conditions for grades, we could
+return different grade values for not only doubles (GPA's), but for character grades as well. I also really enjoyed 
+overloading the input and output operators to move around funds within different accounts. Overall, this workshop
+improved my understanding of the topics at hand significantly, and I look forward to using
+operators and free helpers in the future with more ease.

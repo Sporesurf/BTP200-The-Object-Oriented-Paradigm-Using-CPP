@@ -1,0 +1,63 @@
+												Milestone 1:
+For module 1, I had to do a significant amount of unit testing that I believe will prove to be very useful.
+In the getInt() function in utils.cpp, I learned how to read a string and store it into an int if
+it passes the conditions that require it to truly be an int. I had to use sstream functionalities to do it 
+and moving forward in C++ when I have to do string to int conversions, I believe it will be a breeze.
+
+The part where ms1 got really difficult in my opinion was in the Time module when we had to read and write
+different time inputs. I had to do an extensive amount of research to learn how to implement the proper
+logic required to read time on a 24 hour clock. I also had to come back a few times in the next milestone to make
+minor adjustments to some of the logic within the Time implementation.
+
+
+												MILESTONE 2:
+The Menu module and IOAble module in Milestone 2 were both very easy, and almost felt like a break relative to the first one
+however, The IOAble module single handily made me understand the purpose of pure virtual functions and 
+the reason for their inclusion in header files. The concept of functions with no bodies(typically) confused me
+until I released how instantiation works and how they're necessary in order to make sure that the base class
+doesn't get instantiated in place of the one that is required.
+
+	
+												MILESTONE 3:
+The patient module as well wasn't very difficult, but I had the silliest little bug that pointed me
+to a random memory error that was near impossible to find. When I was using strlen to get
+the size of a string that I was going to dynamically allocate. I had place str.c_str() + 1 within
+strlen instead of the actual required syntax which is strlen(str.c_str()) + 1. The compiler didn't catch this error
+but I was writing 4 less bytes than I was supposed to. This created a memory issue which had me looking for days.
+Upon seeing the weird syntax, I fixed it immediately but it was very difficult to find even when looking line by line.
+
+
+												MILESTONE 4:
+Milestone 4 was very similar to Milestone 3, and none of the implementation we had to do was any different from
+the previous module. Therefore, everything was quite straightforward, however. In module 4 this was where
+I had to call the parent class member functions within the derived classes CovidPatient and TriagePatient. 
+At this point I really grasped a good understanding of the inheritance hierarchy and why we had implemented
+the IOAble module within milestone 2. It was really refreshing to see how we could call base class
+member functions and add on to them to create new variations of them using derived classes. In this case
+we added on to the csvRead,csvWrite,read and write functions in which we were going to use them interchangeably 
+in milestone 5.
+
+
+												MILESTONE 5:
+Milestone 5 is where things got really serious. MS5 felt like a full-time job for over a week, 
+and taught me a significant amount of almost everything we have learned to this date. First and foremost,
+instantiation of derived classes using objects of base classes. For the register function, we had to instantiate
+a covid or triage patient based off of the user’s selection, this was simple. However, I did not know
+that you could instantiate a derived patient using the m_lineup pointer defined earlier in the module.
+
+Similarly, we had to do the same thing in the load function, once either the character C or T were passed.
+After the reg function, this was trivial, but it was cool to see that we could do that using
+a freshly created Patient pointer like we did.
+
+Other than these two functions, the remainder of my issues were basic syntax errors, a lot of the 
+implementation was well explained and the pseudo code given to use was really useful. I was slightly
+confused with the template initially but now with more practice I'm beginning to understand them better as well.
+The destructor as well was very straight forward; however, I did come upon an error where I was deleting an array
+that I was looping through, so in stead of deleting 8 bytes I deleted 48. By removing the square brackets
+in my loop at the end of the destructor, the problem was quickly solved.
+
+											General Experience:
+This project has reinforced my OO programming skills & understanding of them significantly. It also
+showed how wonderful of a language C++ can be when it comes to its functionalities and computing power.
+Although these milestones took a lot of time, I came out feeling more confident than ever in my programming skills
+and I am looking deeply forward to btp300 next semester.

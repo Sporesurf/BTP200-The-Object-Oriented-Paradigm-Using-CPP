@@ -1,0 +1,24 @@
+Up until now we were using cin and cout exclusively for input and output streams, however 
+in the case of workshop part 2. We had to read the streams from a file making things very different. 
+Because the fscanf lines were given to us in part 1, it was quite simple in the lab portion of the workshop
+however, I personally experienced some issues in part 2 where I had to use [set] to read the first half of each line up until 
+the comma. This caused an error that wouldn't enter the condition for scanning the integer half of the line to come in the 
+int overload of read. I solved this by adding a comma before the decimal integer specifier. This also helped me learn that if
+you are to scan a certain width of characters using a numeric value before c, it will not add a null terminator like a [set] specifier
+potentially causing more issues with reading further memory. 
+
+In and out parameters stand for incoming parameters and outgoing parameters. 
+An example of the incoming parameters would be a non pointer or reference type such int  afunction(int num1),
+where the parameter value is the only thing passed in by the called to the function. This is very different from the out parameters we were using
+in our read functions, because out parameters are information passed back from the function the programmer. In this workshop
+we had to use out parameters in our read functions to pass back the next set of information from the file to the program, 
+so we could handle it accordingly to our needs using the load function. 
+
+When finishing up my project, I had a weird valgrind message saying that 1 block was still reachable. This didn't interfere with 
+submission however it bothered me so I looked further into the problem. Only to realize that I never actually closed
+the file in my load(const char* ) function overload. After putting a closefile() before it returned a bool value, the problem was solved
+and all remaining memory was handled. This is good to note, so that I may avoid bugs and further issues when working with files in c++ 
+in the future.
+
+Overall, as listed above. Successful completion of this workshop was a really good learning lesson for future projects, as majority
+of the time spent working on it was debugging issues I can see myself preventing in the future.

@@ -1,0 +1,17 @@
+Workshop 7 was really helpful in developing my understanding of Inheritance, and Polymorphism.
+The first thing I learned is the purpose of calling the base class constructor.
+Because Derived classes are constructed in a way such that the base constructor gets called first
+the compiler fails to understand or accept a constructor that lacks implementation
+on the derived classes end of things. We have to make sure we construct the parent 
+class before we can construct the derived class. It all logically makes sense because
+a Truck would not be able to inherit properties such as m_licenseplate, address, year built and so forth
+and we would only be left with a class named truck, that wouldn't define the object in any sense other
+than its carrying capacity and max capacity, in this case leaving 3 different variables within
+this object uninitialized. It as well wouldn't be able to inherit its parent classes functions and abilities
+such as moveTo and so forth. 
+
+When implementing the function overloads for write, read, I understood the purpose of polymorphism.
+In the write and read functions for Truck::, we can see that we can manipulate the output and input stream 
+to perform tasks specific to a derived class. In this instance, we called the read function from
+Motor vehicle, before appending a specific ostr and istr to our derived class truck. This was very interesting to me
+conceptually. 

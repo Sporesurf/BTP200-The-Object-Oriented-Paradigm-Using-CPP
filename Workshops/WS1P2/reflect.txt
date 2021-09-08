@@ -1,0 +1,9 @@
+Part one of the workshop was very useful for refreshing my memory of the elements required in modular programming. 
+For starters, I forgot how important and useful header guards could be prior to running into an issue with them in this workshop. 
+Having to include ShoppingRec.h in the File.h file also refreshed my understanding of accessing structs in other modules. The rest of part 1
+helped with general program knowledge, such as what should be called globally or within a specific scope.
+Part 2 on the other hand was very useful for understanding statically allocated memory and iterating through it to access it. 
+For instance, iterating through the individual positions within the strings passed to the pointer parameters through out almost all the 
+functions we had to implement, and knowing how a len parameter can be used to add a null terminator given the right conditions.
+It also helped me understand that although pointers and arrays are synonymous in c++, pointers can be used to take
+different addresses in place of fixed values that arrays are limited to.

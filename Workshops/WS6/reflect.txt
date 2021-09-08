@@ -1,0 +1,15 @@
+While implementing MS1, the first thing I learned was when I was implementing the getInt methods while unit testing.
+We had to make sure that whatever input we received from the console was a valid integer. After doing some 
+reading, I found out that one method of doing such an integrity check in c++ is by taking the input as a string using getline(), 
+and passing that string into a stringstream object. Once the stringstream object has the string, you can then use
+that string stream object with an insertion operator to initialize an integer if its valid. 
+This is definitely something I see my self using in the near future. Other than that, the rest of MS1 was pretty trivial,
+however, some of the logic in the Time module did take quite a bit of thinking.
+
+For WS6 on the other hand, I had to spend quite a bit of time debugging unfortunately because of small mistakes I made
+when reading the guidelines on how to implement whatever was necessary,
+(such a setting pageSize to a safe empty state instead of noOfLines, after already making its value the argument).
+But it was excellent practice none the less for operator overloading and implementing the rule of three.
+I definitely feel more comfortable now using file streams such and ifstream and ofstream. Overall although
+both MS1 and WS6 required a significant amount of work, I feel like my understanding of fundamental c++ has 
+grown substantially.
